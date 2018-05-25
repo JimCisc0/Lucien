@@ -1,0 +1,22 @@
+{
+  "name": "lucien",
+  "version": "1.0.0",
+  "description": "Bot Discord de Luciefer22",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JimCisc0/Lucien.git"
+  },
+  "author": "JimCisco",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/JimCisc0/Lucien/issues"
+  },
+  "homepage": "https://github.com/JimCisc0/Lucien#readme",
+  "dependencies": {
+    "discord.js": "^11.3.2"
+  }
+}
