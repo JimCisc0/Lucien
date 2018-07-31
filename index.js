@@ -1,5 +1,6 @@
 ﻿const botconfig = require("./botconfig.json");
 const tokenfile = require("./token.json");
+var twitchLive =require("./node_modules/TwitchLive");
 const Discord = require("discord.js");
 const bot = new Discord.Client({disableEveryone: true});
 
@@ -94,6 +95,16 @@ bot.on("message", async message => {
 
     return message.channel.send(serverembed);
   }
+
+
+// TWITCH STATUT
+
+if(cmd === `${prefix}stream`){
+
+  twitchLive(message.channel);
+
+  
+}
 
 
 // BOT INFO

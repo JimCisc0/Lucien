@@ -17,6 +17,8 @@
   },
   "homepage": "https://github.com/JimCisc0/Lucien#readme",
   "dependencies": {
-    "discord.js": "^11.3.2"
+    "discord.js": "^11.3.2",
+    "jquery": "^3.3.1",
+    "restler": "^3.4.0"
   }
 }
