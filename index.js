@@ -3,6 +3,7 @@ const tokenfile = require("./token.json");
 var twitchLive =require("./node_modules/TwitchLive");
 const Discord = require("discord.js");
 const bot = new Discord.Client({disableEveryone: true});
+const Wban = require("./node_modules/banWords")
 
 bot.on('ready', async () => {
   console.log(`${bot.user.username} is online`);
@@ -49,7 +50,7 @@ bot.on("message", async message => {
     return;
   }
 
-  //                            BAN
+  //        BAN
   //				TEST
 
   if(cmd === `${prefix}ban`){
@@ -104,6 +105,13 @@ if(cmd === `${prefix}stream`){
   twitchLive(message.channel);
 
   
+}
+// WORDS BAN
+
+if(cmd === `${prefix}banword`){
+
+ Wban.add(args,message.channel);
+
 }
 
 
