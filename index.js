@@ -108,11 +108,13 @@ if(cmd === `${prefix}stream`){
 }
 // WORDS BAN
 
+Wban.surveille(message);
+
 if(cmd === `${prefix}banword`){
 
  Wban.add(args,message.channel);
 
-}
+};
 
 
 // BOT INFO
